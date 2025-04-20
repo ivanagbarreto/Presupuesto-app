@@ -36,8 +36,8 @@ body{
 }
 .wrapper h3{
     color: black;
-
     font-family: "Tangerine", cursive;
+   
     margin-bottom: 0.6em;
     font-weight: bolder;
 }
@@ -50,9 +50,63 @@ body{
     color: #414a67;
     outline: none;
     font-weight: 400;
+    margin-bottom: 0.6em;
 }
 
 .container input:focus{
     border-color: #631C2A;
-    
+}
+.total-amount-container,
+.user-amount-container{
+    background-color: #E7DECF;
+    padding: 1.25em 0.9em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0 , 80, 0.06);
+
+}
+.output-container{
+    background-color: #631C2A;
+    color: #d0d0d0;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0 , 80, 0.06);
+    margin: 2em 0;
+    padding: 1.2em;
+}
+
+.output-container p{
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+.output-container span{
+    display: block;
+    text-align: center;
+    font-weight: 400 ;
+}
+
+.submit{
+    font-size: 1em;
+    margin-top: 0.8em;
+    background-color: #631C2A;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+   
+}
+
+.list{
+    background-color: #E7DECF ;
+    padding: 1.8em 1.2em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0 , 80, 0.06);
+    border-radius: 0.6em;
+}
+
+.hide{
+    display: none;
+}
+
+.error{
+    color: #631C2A;
 }

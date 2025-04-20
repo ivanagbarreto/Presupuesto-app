@@ -22,14 +22,32 @@
                  <!--Gastos-->
                  <div class="user-amount-container">
                     <h3> Gastos </h3>
-                    <p class="hide-error" id="product-title-error"> Values cannot be empty</p>
+                    <p class="hide error" id="product-title-error"> Values cannot be empty</p>
                     <input type="text" class="product-title" id="product-title" placeholder="Ingresá el producto">
                     <input type="number" id="user-amount" placeholder="Ingresá el precio del producto">
                     <button class="submit" id="check-amount"> Check amount </button>
                  </div>
                 <!--Output-->   
+                <div class="output-container flex-space">
+                    <div>
+                        <p>Gastos</p>
+                        <span id="expenditure-value"> 0 </span>
+                    </div>
+                    <div>
+                        <p>Presupuesto total</p>
+                        <span id="amount"> 0 </span>
+                    </div>
+                    <div>
+                        <p>Balance</p>
+                        <span id="balance-amount"> 0 </span>
+                    </div>
+                </div>
             </div>
-            <!--List-->  
+            <!--List--> 
+            <div class="list">
+                <h3>Lista de gastos</h3>
+                <div class="list-container" id="list"></div>
+            </div> 
         </div>
     </div>
 </body>
