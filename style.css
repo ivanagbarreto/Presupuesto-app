@@ -6,9 +6,9 @@
 }
 
 body{
-    background: url(/images/toile-bg.jpg);
-    background-repeat: no-repeat;
+    background: url(/images/bluebg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .wrapper{
     width: 90%;
@@ -36,8 +36,8 @@ body{
 }
 .wrapper h3{
     color: black;
-    font-family: "Tangerine", cursive;
-   
+    font-family: "Manrope", sans-serif;
+   text-transform: uppercase;
     margin-bottom: 0.6em;
     font-weight: bolder;
 }
@@ -49,8 +49,12 @@ body{
     border-radius: 0.3em;
     color: #414a67;
     outline: none;
-    font-weight: 400;
+    font-weight: 200;
     margin-bottom: 0.6em;
+    
+}
+.invisible{
+    visibility: hidden;
 }
 
 .container input:focus{
@@ -58,14 +62,14 @@ body{
 }
 .total-amount-container,
 .user-amount-container{
-    background-color: #E7DECF;
+    background-color: #F7F2EC;
     padding: 1.25em 0.9em;
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0 , 80, 0.06);
 
 }
 .output-container{
-    background-color: #631C2A;
+    background-color: #091E5D;
     color: #d0d0d0;
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0 , 80, 0.06);
@@ -74,8 +78,9 @@ body{
 }
 
 .output-container p{
-    font-weight: 500;
+    font-weight: 800;
     margin-bottom: 0.6em;
+    font-family: "Tangerine", cursive;
 }
 .output-container span{
     display: block;
@@ -84,20 +89,40 @@ body{
 }
 
 .submit{
-    font-size: 1em;
+    font-size: 0.7em;
     margin-top: 0.8em;
-    background-color: #631C2A;
+    background: linear-gradient(145deg, #0b2270, #07194a);
     border: none;
     outline: none;
     color: white;
     padding: 0.6em 1.2em;
     border-radius: 0.3em;
     cursor: pointer;
-   
+    box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.2),   /* sombra externa más suave */
+    -4px -4px 8px rgba(255, 255, 255, 0.15), /* luz superior suavizada */
+    inset 1px 1px 2px rgba(255, 255, 255, 0.2), /* luz interna clara */
+    inset -1px -1px 2px rgba(209, 217, 230, 0.15); /* sombra interna más tenue */
+transition: all 0.2s ease-in-out;
+}
+
+
+.submit:hover {
+    box-shadow: 
+        4px 4px 8px #d1d9e6,
+        -4px -4px 8px #ffffff,
+        inset 1px 1px 3px rgba(255, 255, 255, 0.5),
+        inset -1px -1px 3px rgba(209, 217, 230, 0.5);
+}
+
+.submit:active {
+    box-shadow: 
+        inset 4px 4px 6px #d1d9e6,
+        inset -4px -4px 6px #ffffff;
 }
 
 .list{
-    background-color: #E7DECF ;
+    background-color: #F7F2EC ;
     padding: 1.8em 1.2em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0 , 80, 0.06);
     border-radius: 0.6em;
@@ -110,3 +135,4 @@ body{
 .error{
     color: #631C2A;
 }
+

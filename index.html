@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Tangerine:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
@@ -33,7 +34,14 @@
               id="total-amount"
               placeholder="Ingresá el total"
             />
+            <input
+            type="number"
+            class="invisible"
+            placeholder="Ingresá el total"
+          />
+           
             <button class="submit" id="total-amount-button">Establecer</button>
+            
           </div>
           <!--Gastos-->
           <div class="user-amount-container">
@@ -50,9 +58,9 @@
             <input
               type="number"
               id="user-amount"
-              placeholder="Ingresá el precio del producto"
+              placeholder="Ingresá el precio"
             />
-            <button class="submit" id="check-amount">Check amount</button>
+            <button class="submit" id="check-amount">Establecer</button>
           </div>
         </div>  
           <!--Output-->
