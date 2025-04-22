@@ -64,12 +64,20 @@ const listCreator = (expenseName, expenseValue) => {
   let editButton = document.createElement("button");
   editButton.classList.add("fa-solid", "fa-pen-to-square", "edit");
   editButton.style.fontSize = "1.2em";
+  editButton.style.border = "none";
+  editButton.style.background = "transparent";
+  editButton.style.outline = "none";
+  editButton.style.cursor = "pointer";
   editButton.addEventListener("click", () => {
     modifyElement(editButton, true);
   });
   let deleteButton = document.createElement("button");
   deleteButton.classList.add("fa-solid", "fa-trash-can", "delete");
   deleteButton.style.fontSize = "1.2em";
+  deleteButton.style.border = "none";
+  deleteButton.style.background = "transparent";
+  deleteButton.style.outline = "none";
+  deleteButton.style.cursor = "pointer";
   deleteButton.addEventListener("click", () => {
     modifyElement(deleteButton);
   });

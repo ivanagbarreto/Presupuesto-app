@@ -43,22 +43,29 @@ body{
 .container input {
     display: block;
     width: 100%;
-    padding: 0.6em 0.3em; /* Ajusta el padding según lo que quieras */
-    border: none; /* Elimina los bordes */
+    padding: 0.6em 0.3em; 
+    border: none; 
     border-bottom: 1px solid #d0d0d0;
+    font-family: "Poppins", sans-serif;
     color: #414a67;
     outline: none;
     font-size: 10px;
     margin-bottom: 0.6em;
     background-color: transparent;
-    
+    font-size: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .invisible{
     visibility: hidden;
 }
 
 .container input:focus{
-    border-color: #631C2A;
+    border-color: #091E5D;
 }
 .total-amount-container,
 .user-amount-container{
@@ -66,10 +73,10 @@ body{
     padding: 1.25em 0.9em;
     border-radius: 0.3em;
     box-shadow: 
-    4px 4px 8px rgba(0, 0, 0, 0.2),   /* sombra externa más suave */
-    -4px -4px 8px rgba(255, 255, 255, 0.15), /* luz superior suavizada */
-    inset 1px 1px 2px rgba(255, 255, 255, 0.2), /* luz interna clara */
-    inset -1px -1px 2px rgba(209, 217, 230, 0.15); /* sombra interna más tenue */
+    4px 4px 8px rgba(0, 0, 0, 0.3),   
+    -4px -4px 8px rgba(255, 255, 255, 0.15), 
+    inset 1px 1px 2px rgba(255, 255, 255, 0.2), 
+    inset -1px -1px 2px rgba(209, 217, 230, 0.15); 
 
 }
 .output-container{
@@ -88,14 +95,14 @@ body{
     font-size: 13px;
     margin-bottom: 0.6em;
     font-weight: bold;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 }
 .output-container span{
     display: block;
     text-align: center;
     font-size: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .submit{
@@ -109,7 +116,7 @@ body{
     border-radius: 0.3em;
     cursor: pointer;
     box-shadow: 
-    4px 4px 8px rgba(0, 0, 0, 0.2),   
+    4px 4px 8px rgba(0, 0, 0, 0.3),   
     -4px -4px 8px rgba(255, 255, 255, 0.15), 
     inset 1px 1px 2px rgba(255, 255, 255, 0.2), 
     inset -1px -1px 2px rgba(209, 217, 230, 0.15); 
@@ -137,10 +144,10 @@ body{
     box-shadow: 0 0.6em 1.2em rgba(28, 0 , 80, 0.06);
     border-radius: 0.6em;
     box-shadow: 
-    4px 4px 8px rgba(0, 0, 0, 0.2),   /* sombra externa más suave */
-    -4px -4px 8px rgba(255, 255, 255, 0.15), /* luz superior suavizada */
-    inset 1px 1px 2px rgba(255, 255, 255, 0.2), /* luz interna clara */
-    inset -1px -1px 2px rgba(209, 217, 230, 0.15); /* sombra interna más tenue */
+    4px 4px 8px rgba(0, 0, 0, 0.3),   
+    -4px -4px 8px rgba(255, 255, 255, 0.15), 
+    inset 1px 1px 2px rgba(255, 255, 255, 0.2), 
+    inset -1px -1px 2px rgba(209, 217, 230, 0.15); 
 }
 
 .hide{
